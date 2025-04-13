@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/styles.scss'],
   modules: ['@nuxt/fonts'],
   app: {
+    baseURL: '/noise-patterns/',
     pageTransition: { name: 'page', mode: 'out-in' },
   },
 });

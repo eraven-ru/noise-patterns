@@ -1,0 +1,39 @@
+@use './globals.scss';
+
+html,
+body {
+  user-select: none !important;
+  box-sizing: border-box;
+  font-family: Raleway, sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+
+  background: black;
+  color: white;
+
+  & > div {
+    height: 100%;
+  }
+}
+
+h1 {
+  font-size: 64px;
+}
+
+p {
+  font-size: 20px;
+  margin: 0;
+
+  @media (max-width: globals.$md) {
+    font-size: 18px;
+  }
+}
+
+* {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+*::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}

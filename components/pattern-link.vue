@@ -1,8 +1,8 @@
 <template>
   <div class="pattern-link" @mouseenter="animate">
-    <img :src="`/images/${name}-sm.png`" class="pattern-link__image" />
-    <img :src="`/images/${name}-sm.png`" class="pattern-link__image filtered hue-shift-1" :class="name" />
-    <img :src="`/images/${name}-sm.png`" class="pattern-link__image filtered hue-shift-2" :class="name" />
+    <img :src="`/noise-patterns/images/${name}-sm.png`" class="pattern-link__image" />
+    <img :src="`/noise-patterns/images/${name}-sm.png`" class="pattern-link__image filtered hue-shift-1" :class="name" />
+    <img :src="`/noise-patterns/images/${name}-sm.png`" class="pattern-link__image filtered hue-shift-2" :class="name" />
 
     <span class="pattern-link__name">{{ name }}</span>
   </div>

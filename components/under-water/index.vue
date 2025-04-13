@@ -3,7 +3,7 @@
     <AnimatedCanvas
       :fragment-shader="fragmentShader"
       :update-mouse="true"
-      pass-texture="/textures/tile.jpg"
+      pass-texture="/noise-patterns/textures/tile.jpg"
       :start-radius="1"
     />
   </div>

@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       title: 'noise patterns',
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/noise-patterns/favicon.svg' }],
     },
   },
 });

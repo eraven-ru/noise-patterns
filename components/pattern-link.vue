@@ -1,8 +1,8 @@
 <template>
   <div class="pattern-link" @mouseenter="animate">
-    <img :src="image" class="pattern-link__image" />
-    <img :src="image" class="pattern-link__image filtered hue-shift-1" :class="name" />
-    <img :src="image" class="pattern-link__image filtered hue-shift-2" :class="name" />
+    <img :src="`/images/${name}-sm.png`" class="pattern-link__image" />
+    <img :src="`/images/${name}-sm.png`" class="pattern-link__image filtered hue-shift-1" :class="name" />
+    <img :src="`/images/${name}-sm.png`" class="pattern-link__image filtered hue-shift-2" :class="name" />
 
     <span class="pattern-link__name">{{ name }}</span>
   </div>
@@ -11,7 +11,7 @@
 <script lang="ts" setup>
 import { gsap } from 'gsap'
 
-const { name } = defineProps(['name', 'image'])
+const { name } = defineProps(['name'])
 
 function animate() {
   const tl = gsap.timeline()

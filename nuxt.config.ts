@@ -7,5 +7,9 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/noise-patterns/',
     pageTransition: { name: 'page', mode: 'out-in' },
+    head: {
+      title: 'noise patterns',
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }],
+    },
   },
 });

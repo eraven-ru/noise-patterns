@@ -34,8 +34,6 @@
         <PatternLinks class="pattern-links" />
       </div>
     </div>
-
-    <div class="raw-container" v-if="false"></div>
   </div>
 
   <button
@@ -45,6 +43,14 @@
   >
     {{ infoVisible ? 'hide text' : 'show text' }}
   </button>
+
+  <div
+    class="repo-link"
+    @click.stop="navigateTo('https://github.com/eraven-ru/noise-patterns', { external: true, open: { target: '_blank' } })"
+  >
+    <p>repo</p>
+    <img src="/icons/repo.svg" class="repo-link__icon" />
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -162,6 +168,31 @@ function toggleParagraph() {
 
   &.dark {
     background: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.repo-link {
+  position: fixed;
+  top: 32px;
+  right: 32px;
+  z-index: 15;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  cursor: pointer;
+
+  & p {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
   }
 }
 

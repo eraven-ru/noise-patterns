@@ -1,7 +1,7 @@
 <template>
   <div class="pattern-links">
     <div v-for="link in currentLinks" @click="navigateTo(link.path)">
-      <PatternLink :name="link.name" :image="link.image" />
+      <PatternLink :name="link.name" />
     </div>
   </div>
 </template>
@@ -11,9 +11,9 @@ const route = useRoute()
 const router = useRouter()
 
 const links = [
-  { name: 'flames', path: '/flames', image: '/images/flames-sm.png' },
-  { name: 'aurora', path: '/aurora', image: '/images/aurora-sm.png' },
-  { name: 'under-water', path: '/under-water', image: '/images/under-water-sm.png' }
+  { name: 'flames', path: '/flames' },
+  { name: 'aurora', path: '/aurora' },
+  { name: 'under-water', path: '/under-water' }
 ]
 
 let currentLinks = ref(links.filter(el => !route.path.startsWith(el.path)))

@@ -1,75 +1,25 @@
-# Nuxt Minimal Starter
+# noise patterns
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Project features animations made with the help of multidimentional simplex noise functions. Three.js shaders along with "glsl-noise" package are used for calculating and visualizing noise. 
 
-## Setup
+Inspired by an [article](https://thebookofshaders.com/11/) on noise functions in [The Book of Shaders](https://thebookofshaders.com) 
+and a set of articles on [Codrops](https://tympanus.net/codrops/) such as [this one](https://tympanus.net/codrops/2019/10/23/making-gooey-image-hover-effects-with-three-js/).
 
-Make sure to install dependencies:
+[Demo](https://eraven.ru/noise-patterns/flames)
+
+## setup
 
 ```bash
-# npm
 npm install
 
-# pnpm
-pnpm install
+# then
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
 
-# pnpm
-pnpm dev
+# or
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Check out the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) for more information.

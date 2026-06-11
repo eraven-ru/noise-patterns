@@ -5,7 +5,7 @@ Project features animations made with the help of multidimentional simplex noise
 Inspired by an [article](https://thebookofshaders.com/11/) on noise functions in [The Book of Shaders](https://thebookofshaders.com) 
 and a set of articles on [Codrops](https://tympanus.net/codrops/) such as [this one](https://tympanus.net/codrops/2019/10/23/making-gooey-image-hover-effects-with-three-js/).
 
-[Demo](https://eraven.ru/noise-patterns/flames)
+[Demo](http://222.167.246.124/noise-patterns/flames)
 
 ## setup
 
